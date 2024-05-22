@@ -88,7 +88,7 @@ const MobileLink = ({
       className={cn(
         "transition-colors hover:text-primary",
         pathname === href.toString() ? "text-primary" : "text-foreground/60",
-        className
+        className,
       )}
       {...props}
     >
