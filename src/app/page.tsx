@@ -1,3 +1,4 @@
+import HeroPage from "@/components/hero-page";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -5,5 +6,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return <h1>Hello</h1>;
+  return <HeroPage />;
 }
