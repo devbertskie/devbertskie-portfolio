@@ -26,7 +26,7 @@ export default function ProjectItem({
           alt={title}
           height={300}
           width={300}
-          className="object-cover"
+          objectFit="cover"
         />
         <ItemDescription
           title={title}
@@ -53,7 +53,7 @@ export default function ProjectItem({
             rel="noreferrer"
             className={cn(
               buttonVariants({ variant: "outline" }),
-              "px-0 size-8 bg-primary/10 text-primary hover:bg-background hover:text-foreground p-1 rounded-full"
+              "px-0 size-8 bg-primary/10 text-primary hover:bg-background hover:text-foreground p-1 rounded-full",
             )}
           >
             <Icons.github className="size-4" />
