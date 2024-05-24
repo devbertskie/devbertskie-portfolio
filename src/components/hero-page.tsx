@@ -1,20 +1,22 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { Icons } from "./icons";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import Image from "next/image";
 
 export default function HeroPage() {
   return (
     <section className="container -mt-56 flex min-h-dvh max-w-screen-2xl flex-col items-center justify-center gap-y-4">
-      <Avatar className="mb-5 size-20 sm:size-28">
-        <AvatarImage
-          className="object-cover"
-          src="https://bertonatics.karlencutie.workers.dev/download.aspx?file=BG72WCMFU3BmSSJ7rZCalfOAPIbFLyWCzV6r6XWJz8BNToCtVg5Ps5qtb6s3JybR&expiry=A38tNchJCATJ741WqUB1YA%3D%3D&mac=42432686487a3af96bc32265a3e9b3a06c15e8a6a63618abc496c3597d0aa219"
-        />
-        <AvatarFallback>HB</AvatarFallback>
-      </Avatar>
+      <Image
+        src={siteConfig.authorProfileImage}
+        height={400}
+        width={400}
+        alt="profile_image"
+        className="mb-4 size-20 rounded-full sm:mt-6 md:size-32"
+        objectFit="cover"
+        priority={true}
+      />
       <div className="flex flex-col items-center space-y-4">
         <h1 className="text-3xl md:text-5xl">
           Hi, I&apos;m{" "}

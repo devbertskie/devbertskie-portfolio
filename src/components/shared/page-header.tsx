@@ -8,15 +8,15 @@ import {
 
 interface PageHeaderProps {
   label: string;
-  description: string;
+  description?: string;
 }
 
 export default function PageHeader({ label, description }: PageHeaderProps) {
   return (
-    <Card className="my-4 w-full border-0 bg-primary/10">
+    <Card className="my-4 w-full border-0 border-l-4 border-primary bg-muted/40">
       <CardHeader>
-        <CardTitle>{label}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardTitle className="text-primary">{label}</CardTitle>
+        {description ? <CardDescription>{description}</CardDescription> : null}
       </CardHeader>
     </Card>
   );

@@ -7,7 +7,7 @@ export default function ProjectPage() {
     <section className="container max-w-screen-2xl">
       <PageHeader
         label="My Projects"
-        description="This is my current projects"
+        description="These projects are prime examples of my diverse skill set and experience, demonstrating my ability to use code to solve problems, and to have some fun 😊"
       />
       {/* <Separator className="my-2" /> */}
       <ProjectList />

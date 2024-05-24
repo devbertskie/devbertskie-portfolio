@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={cn(
           "antialiased min-h-screen font-lexend bg-background",
-          lexend.variable,
+          lexend.variable
         )}
       >
         <ThemeProvider

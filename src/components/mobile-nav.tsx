@@ -10,6 +10,7 @@ import { Icons } from "@/components/icons";
 import { siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/constants";
+import Image from "next/image";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,13 @@ export default function MobileNav() {
           onOpenChange={setIsOpen}
           className="flex items-center text-primary"
         >
-          <Icons.logo className="mr-2 size-4" />
+          <Image
+            src={siteConfig.logo}
+            height={30}
+            width={30}
+            alt="logo"
+            className="mr-2 size-6"
+          />
           <span className="font-bold">{siteConfig.name}</span>
         </MobileLink>
 
@@ -88,7 +95,7 @@ const MobileLink = ({
       className={cn(
         "transition-colors hover:text-primary",
         pathname === href.toString() ? "text-primary" : "text-foreground/60",
-        className,
+        className
       )}
       {...props}
     >
