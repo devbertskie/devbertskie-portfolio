@@ -49,6 +49,29 @@
   }
 }
 
+.typing-demo {
+  width: 14ch;
+  animation:
+    typing 2s steps(16),
+    blink 0.5s step-end 5 alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 5px solid;
+  border-color: transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: white;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;

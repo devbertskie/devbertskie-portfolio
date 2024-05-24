@@ -17,13 +17,12 @@ export default function HeroPage() {
         priority={true}
       />
       <div className="flex flex-col items-center space-y-4">
-        <h1 className="text-3xl md:text-5xl">
+        <h1 className="typing-demo text-3xl md:text-5xl">
           Hi, I&apos;m{" "}
           <span className="font-bold capitalize text-primary">Hubert</span>👋{" "}
         </h1>
         <p className="max-w-xl text-center text-sm text-muted-foreground sm:text-lg">
-          Passionate developer crafting intuitive digital solutions with
-          dedication.
+          {siteConfig.careerOnjective}
         </p>
       </div>
       <div className="flex flex-row space-x-4">
