@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function HeroPage() {
   return (
-    <section className="container -mt-56 flex min-h-dvh max-w-screen-2xl flex-col items-center justify-center gap-y-4">
+    <section className="container -mt-40 flex min-h-dvh max-w-screen-2xl flex-col items-center justify-center gap-y-4 md:-mt-56">
       <Image
         src={siteConfig.authorProfileImage}
         height={400}
@@ -17,7 +17,7 @@ export default function HeroPage() {
         priority={true}
       />
       <div className="flex flex-col items-center space-y-4">
-        <h1 className="typing-demo text-3xl md:text-5xl">
+        <h1 className="typing-demo font-grotesk text-3xl md:text-5xl">
           Hi, I&apos;m{" "}
           <span className="font-bold capitalize text-primary">Hubert</span>👋{" "}
         </h1>

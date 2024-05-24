@@ -7,7 +7,7 @@ export default function ContactPage() {
     <section className="container max-w-screen-2xl">
       <PageHeader
         label="Contact Information"
-        description="I'm currently looking for new opportunity and let's collaborate together.🎉"
+        description="I'm currently looking for new opportunity and this is the perfect time to collaborate together.🎉"
       />
 
       <div className="mt-12 flex justify-center">

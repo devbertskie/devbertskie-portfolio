@@ -31,7 +31,7 @@ import typescript from "../../public/tech/typescript.svg";
 import visualbasic from "../../public/tech/visualbasic.svg";
 
 export const siteConfig = {
-  name: "devBertskie",
+  name: "HubertLemuel",
   url: "https://example.com",
   description: "Personal Portfolio",
   author: "Hubert Lemuel Berja",
