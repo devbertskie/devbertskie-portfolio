@@ -6,12 +6,13 @@ import { cn } from "@/lib/utils";
 import App from "@/components/app";
 import ThemeProvider from "@/context/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import { siteConfig } from "@/lib/site-config";
 
 const lexend = Lexend({ subsets: ["latin"], variable: "--font-lexend" });
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Devbertskie",
+    template: `%s | ${siteConfig.name}`,
     default: "Personal Portfolio",
   },
 };

@@ -43,7 +43,7 @@ export const siteConfig = {
     github: "https://github.com/devbertskie",
     email: "hubertberja3231@gmail.com",
     linkedIn: "https://www.linkedin.com/in/hubertlemuel",
-    personalSite: "https://example.com",
+    personalSite: "https://www.hubertlemuel.eu.org",
   },
   projects: [
     {
