@@ -28,7 +28,7 @@ export default function MainNav() {
           href={item.path}
           className={cn(
             "text-sm font-medium transition-colors hover:text-primary hidden sm:inline-block",
-            pathname === item.path ? "text-primary" : "text-foreground/60"
+            pathname === item.path ? "text-primary" : "text-foreground/60",
           )}
         >
           {item.label}

@@ -36,7 +36,7 @@ export const SocialIcon = ({
         <Icons.github
           className={cn(
             `fill-current text-primary hover:text-primary size-${size}`,
-            className
+            className,
           )}
         />
       )}
@@ -44,7 +44,7 @@ export const SocialIcon = ({
         <Icons.mail
           className={cn(
             `fill-current text-primary hover:text-primary size-${size}`,
-            className
+            className,
           )}
         />
       )}
@@ -52,7 +52,7 @@ export const SocialIcon = ({
         <Icons.linkedin
           className={cn(
             `fill-current text-primary hover:text-primary size-${size}`,
-            className
+            className,
           )}
         />
       )}
