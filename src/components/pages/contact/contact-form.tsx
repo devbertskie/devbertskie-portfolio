@@ -21,8 +21,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { sendEmail } from "@/actions/contact-action";
+import { toast } from "sonner";
+import { Loader2 } from "lucide-react";
 
-const formValidator = z.object({
+export const formValidator = z.object({
   name: z.string().min(3, { message: "Min of 3 characters" }).trim(),
   email: z.string().email("Must be a valid email").trim().toLowerCase(),
   message: z.string().min(6, { message: "Minimum of 6 characters" }).trim(),
@@ -40,8 +43,16 @@ export default function ContactForm() {
   });
 
   const onSubmitForm = async (values: z.infer<typeof formValidator>) => {
-    console.log(values);
+    const emailResponse = await sendEmail(values);
+    if (!emailResponse) {
+      toast.error("Something went wrong");
+    } else {
+      toast.success("Your message has been sent.Thank you.");
+      contactForm.reset();
+    }
   };
+
+  const { isSubmitting } = contactForm.formState;
 
   return (
     <Card className="w-[400px] bg-muted/40 p-2 md:w-[500px]">
@@ -133,7 +144,10 @@ export default function ContactForm() {
                 </FormItem>
               )}
             />
-            <Button>Send</Button>
+            <Button disabled={isSubmitting}>
+              {isSubmitting && <Loader2 className="mr-2 size-4 animate-spin" />}
+              {isSubmitting ? "Sending..." : "Send"}
+            </Button>
           </form>
         </Form>
       </CardContent>

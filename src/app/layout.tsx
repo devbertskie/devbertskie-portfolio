@@ -5,6 +5,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import App from "@/components/app";
 import ThemeProvider from "@/context/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 const lexend = Lexend({ subsets: ["latin"], variable: "--font-lexend" });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           lexend.variable,
         )}
       >
+        <Toaster duration={1500} richColors position="bottom-right" />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

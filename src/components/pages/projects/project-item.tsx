@@ -26,7 +26,7 @@ export default function ProjectItem({
           alt={title}
           height={300}
           width={300}
-          objectFit="cover"
+          className="object-cover"
         />
         <ItemDescription
           title={title}

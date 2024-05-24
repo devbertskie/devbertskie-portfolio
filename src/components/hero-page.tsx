@@ -14,7 +14,6 @@ export default function HeroPage() {
         width={400}
         alt="profile_image"
         className="mb-4 size-20 rounded-full sm:mt-6 md:size-32"
-        objectFit="cover"
         priority={true}
       />
       <div className="flex flex-col items-center space-y-4">
