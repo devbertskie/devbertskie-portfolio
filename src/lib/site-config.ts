@@ -57,7 +57,7 @@ export const siteConfig = {
   ],
   experience: [
     {
-      role: "Applications Systems Engineer",
+      role: "Application Systems Engineer",
       company: "Weserv Systems International",
       isActive: true,
       duration: "January 2021 - Present",

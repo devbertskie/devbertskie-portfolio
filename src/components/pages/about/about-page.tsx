@@ -17,8 +17,12 @@ export default function AboutPage() {
 
         <div className="max-w-none px-6 py-8 xl:col-span-2 xl:px-0">
           <div>
-            <p className="font-normal text-muted-foreground">
-              {siteConfig.careerOnjective}
+            <p className="text-center text-sm font-normal text-muted-foreground md:text-start xl:text-lg">
+              I thrive in Collaborative environments. Committed to continuous
+              learning and staying abreast of industry trends, I am eager to
+              contribute my skills and drive for excellence to a dynamic team or
+              project. Let&apos;s connect and explore opportunities for mutual
+              growth.{siteConfig.careerOnjective}
             </p>
           </div>
 

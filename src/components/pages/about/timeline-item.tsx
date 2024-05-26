@@ -39,10 +39,10 @@ export default function TimelineItem({
           </span>
         )}
       </h3>
-      <time className="my-2 block text-xs font-bold leading-none text-muted-foreground sm:text-[16px]">
+      <time className="my-2 block text-sm font-bold leading-none text-muted-foreground">
         {duration}
       </time>
-      <p className="mb-4 text-sm font-normal text-muted-foreground/70 sm:text-base">
+      <p className="mb-4 text-[14px] font-normal text-muted-foreground/70 sm:text-sm">
         {description}
       </p>
     </li>

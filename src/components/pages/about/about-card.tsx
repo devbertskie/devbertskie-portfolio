@@ -11,6 +11,7 @@ import {
 import { siteConfig } from "@/lib/site-config";
 
 const AboutCard = () => {
+  const currentJob = siteConfig.experience.find((exp) => exp.isActive === true);
   return (
     <Card className="relative mx-auto mt-16 w-full max-w-[400px] bg-muted/40">
       <CardHeader className="mt-8 flex items-center justify-center pb-2">
@@ -24,8 +25,11 @@ const AboutCard = () => {
         <CardTitle className="text-center text-primary">
           {siteConfig.author}
         </CardTitle>
-        <CardDescription className="font-normal text-muted-foreground">
-          Applications Systems Engineer
+        <CardDescription className="text-center font-normal text-muted-foreground">
+          {currentJob?.role}
+          <p className="mt-1 text-xs text-muted-foreground/70">
+            {currentJob?.company}
+          </p>
         </CardDescription>
       </CardHeader>
       <CardFooter>
