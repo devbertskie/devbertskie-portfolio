@@ -17,7 +17,7 @@ export default function HeroPage() {
         priority={true}
       />
       <div className="flex flex-col items-center space-y-4">
-        <h1 className="typing-demo font-grotesk text-3xl md:text-5xl">
+        <h1 className="typing-demo text-3xl md:text-5xl">
           Hi, I&apos;m{" "}
           <span className="font-bold capitalize text-primary">Hubert</span>👋{" "}
         </h1>
@@ -26,7 +26,7 @@ export default function HeroPage() {
         </p>
       </div>
       <div className="flex flex-row space-x-4">
-        <Link href="/projects">
+        <Link href="/project">
           <Button className="w-full">View Projects</Button>
         </Link>
         <Link href={siteConfig.social.github} target="_blank" rel="noreferrer">

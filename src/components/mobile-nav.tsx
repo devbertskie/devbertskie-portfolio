@@ -44,8 +44,10 @@ export default function MobileNav() {
               key={item.label}
               href={item.path}
               onOpenChange={setIsOpen}
+              className="flex items-center"
             >
-              {item.label}
+              <item.icon className="mr-2 size-4" />
+              <span>{item.label}</span>
             </MobileLink>
           ))}
 

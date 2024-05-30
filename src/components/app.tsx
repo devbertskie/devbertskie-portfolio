@@ -9,7 +9,7 @@ export default function App({ children }: PropsWithChildren) {
       <SiteHeader />
       <main className="flex-1">{children}</main>
       <footer className="p-4 text-center text-xs text-muted-foreground">
-        © Copyrights 2024 |{" "}
+        &copy; Copyrights 2024 |{" "}
         <Link href={siteConfig.social.personalSite} className="text-primary">
           HubertLemuel
         </Link>

@@ -1,4 +1,3 @@
-import passManagerImage from "../../public/project/project_01.jpg";
 import profileImage from "../../public/profile.jpg";
 import logoImage from "../../public/logo.svg";
 
@@ -45,16 +44,6 @@ export const siteConfig = {
     linkedIn: "https://www.linkedin.com/in/hubertlemuel",
     personalSite: "https://www.hubertlemuel.eu.org",
   },
-  projects: [
-    {
-      title: "Password Manager",
-      description:
-        "Open-source web app that simplifies password and note management, offering a secure and user-friendly experience.",
-      previewUrl: "https://dev-manager.vercel.app",
-      githubRepo: "https://github.com/devbertskie/password-manager",
-      image: passManagerImage,
-    },
-  ],
   experience: [
     {
       role: "Application Systems Engineer",
@@ -94,13 +83,6 @@ export const siteConfig = {
       address: "Simala, Sibonga, Cebu",
       isHighestAttainment: false,
       duration: "S.Y. 2011 - 2015",
-      course: null,
-    },
-    {
-      school: "Simala Elementary School",
-      address: "Simala, Sibonga, Cebu",
-      isHighestAttainment: false,
-      duration: "S.Y. 2005 - 2011",
       course: null,
     },
   ],

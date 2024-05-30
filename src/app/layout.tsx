@@ -1,6 +1,6 @@
 import React from "react";
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/globals.css";
 import { Lexend } from "next/font/google";
 import { cn } from "@/lib/utils";
 import App from "@/components/app";
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body
         className={cn(
           "antialiased min-h-screen font-lexend bg-background",
-          lexend.variable
+          lexend.variable,
         )}
       >
         <Toaster duration={1500} richColors position="bottom-right" />

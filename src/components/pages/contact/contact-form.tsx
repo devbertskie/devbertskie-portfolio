@@ -77,14 +77,14 @@ export default function ContactForm() {
                     <div className="flex flex-col space-y-2">
                       <FormLabel
                         htmlFor="name"
-                        className="text-muted-foreground"
+                        className="text-muted-foreground after:ml-1 after:text-primary after:content-['*']"
                       >
                         Name
                       </FormLabel>
                       <Input
                         type="text"
                         id="name"
-                        placeholder="johndoe"
+                        placeholder="John Doe"
                         {...field}
                       />
                       <FormMessage />
@@ -102,7 +102,7 @@ export default function ContactForm() {
                     <div className="flex flex-col space-y-2">
                       <FormLabel
                         htmlFor="email"
-                        className="text-muted-foreground"
+                        className="text-muted-foreground after:ml-1 after:text-primary after:content-['*']"
                       >
                         Email
                       </FormLabel>
@@ -128,13 +128,13 @@ export default function ContactForm() {
                     <div className="flex flex-col space-y-2">
                       <FormLabel
                         htmlFor="message"
-                        className="text-muted-foreground"
+                        className="text-muted-foreground after:ml-1 after:text-primary after:content-['*']"
                       >
                         Message
                       </FormLabel>
                       <Textarea
                         rows={8}
-                        placeholder="Type your message here."
+                        placeholder="What can I do for you?"
                         id="message"
                         {...field}
                       />
