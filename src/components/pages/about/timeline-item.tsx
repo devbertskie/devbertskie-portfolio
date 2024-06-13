@@ -42,9 +42,17 @@ export default function TimelineItem({
       <time className="my-2 block text-sm font-bold leading-none text-muted-foreground">
         {duration}
       </time>
-      <p className="mb-4 text-[14px] font-normal text-muted-foreground/70 sm:text-sm">
-        {description}
-      </p>
+      <ul className="mb-4 flex flex-col space-y-4 text-[14px] font-normal text-muted-foreground/70 sm:text-sm">
+        {description?.split(". ").map((desc) => (
+          <li key={desc} className="flex items-center gap-3">
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex size-2 rounded-full bg-primary"></span>
+            </span>
+            <p className="">{desc.trim()}.</p>
+          </li>
+        ))}
+      </ul>
     </li>
   );
 }

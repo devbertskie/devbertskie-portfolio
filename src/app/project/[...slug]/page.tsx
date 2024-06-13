@@ -115,7 +115,7 @@ export default async function BlogPageItem({ params }: ProjectPageItemProps) {
         <hr className="mt-12" />
         <div className="flex justify-center py-6 lg:py-10">
           <Link
-            href="/projects"
+            href="/project"
             className={cn(buttonVariants({ variant: "ghost" }))}
           >
             <ChevronLeft className="mr-2 size-4" />

@@ -21,7 +21,7 @@ export default function HeroPage() {
           Hi, I&apos;m{" "}
           <span className="font-bold capitalize text-primary">Hubert</span>👋{" "}
         </h1>
-        <p className="max-w-xl text-center text-sm text-muted-foreground sm:text-lg">
+        <p className="max-w-xl text-center text-sm text-muted-foreground sm:text-lg md:max-w-2xl">
           {siteConfig.careerOnjective}
         </p>
       </div>

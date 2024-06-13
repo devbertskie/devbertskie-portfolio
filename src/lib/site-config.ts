@@ -51,7 +51,7 @@ export const siteConfig = {
       isActive: true,
       duration: "January 2021 - Present",
       jobDescription:
-        "Responsible for Programming related tasks such as coding, testing, and implementation. Modernization / Migration of Tasks. Software and technical documentation.",
+        "Designed and developed web applications using JavaScript framework (React), HTML5, and CSS3 which lead to customer satisfaction. Collaborated closely with developers and other cross-functional teams to managed dynamic web pages for data display and entry using appropriate technologies. Incorporate trainings received into project ideas accompanied with software and technical documentation",
     },
     {
       role: "Associate Software Engineer",
@@ -59,7 +59,7 @@ export const siteConfig = {
       isActive: false,
       duration: "February 2020 - October 2020",
       jobDescription:
-        "Programming and Testing (JAVA and other related language depends on the requirements). Understanding the basic principle of Software Development Life Cycle (SDLC). Able to accomplish trainings specifically core JAVA and Spring Boot for specific project. Understanding the program management, requirements gathering and system integration.",
+        "Adapt and understand the basic principle of Software Development Life Cycle (SDLC). Accomplished trainings specifically core JAVA and Spring Boot for specific project. Briefed development team on website research and made suggestions for website build products",
     },
     {
       role: "Data Analyst",
@@ -67,7 +67,7 @@ export const siteConfig = {
       isActive: false,
       duration: "June 2019 - February 2020",
       jobDescription:
-        "Create an accurate analysis from the data gathered. Communicate with Carrier Account Management /Auditor to verify if the analysis made was accurate. Manage Online Ticketing System and generate and retrieve queries through SQL Databases.",
+        "Create an accurate analysis from the data gathered. Communicate with Carrier Account Management /Auditor to verify if the analysis made was accurate. Manage Online Ticketing System and generate and retrieve queries through SQL Databases",
     },
   ],
   education: [

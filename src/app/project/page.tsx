@@ -17,7 +17,7 @@ export default function ProjectsPage() {
     <section className="container max-w-7xl py-6 lg:py-10">
       <PageHeader
         label="My Projects"
-        description="These projects are prime examples of my diverse skill set and experience, demonstrating my ability to use code to solve problems, and to have some fun😊"
+        description="These projects are prime examples of my diverse skill set and experience, demonstrating my ability to use code to solve problems, and to have some fun."
       />
       <hr className="my-8" />
       {projects.length ? (
