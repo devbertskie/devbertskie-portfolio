@@ -110,7 +110,16 @@ export default async function BlogPageItem({ params }: ProjectPageItemProps) {
           previewUrl={project.previewUrl}
           githubRepo={project.githubRepo}
           className="mb-6"
-        />
+        >
+          {project.title === "Password Manager" && (
+            <div>
+              <p>Demo Credentials</p> Email:{" "}
+              <span className="font-mono text-primary">hubert@email.com</span>
+              {" | "}
+              Pass: <span className="font-mono text-primary">hiremeplease</span>
+            </div>
+          )}
+        </ResourceLinks>
         <Mdx code={project.body} />
         <hr className="mt-12" />
         <div className="flex justify-center py-6 lg:py-10">
