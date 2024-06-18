@@ -31,7 +31,7 @@ import visualbasic from "../../public/tech/visualbasic.svg";
 
 export const siteConfig = {
   name: "HubertLemuel",
-  url: "https://example.com",
+  url: "https://hubertlemuel.vercel.app",
   description: "Personal Portfolio",
   author: "Hubert Lemuel Berja",
   logo: logoImage,
@@ -42,7 +42,7 @@ export const siteConfig = {
     github: "https://github.com/devbertskie",
     email: "hubertberja3231@gmail.com",
     linkedIn: "https://www.linkedin.com/in/hubertlemuel",
-    personalSite: "https://www.hubertlemuel.eu.org",
+    personalSite: "https://hubertlemuel.vercel.app",
   },
   experience: [
     {
